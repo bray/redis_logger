@@ -28,7 +28,7 @@ module RedisLogger
       query = event.payload[:query]
       query = color query, nil, true if odd?
 
-      debug "#{identifier} #{query}"
+      debug "  #{identifier} #{query}"
     end
 
     def odd?
